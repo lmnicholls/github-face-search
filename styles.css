@@ -6,3 +6,20 @@
   margin-top: 40px;
   margin-bottom: 40px;
 }
+
+.users {
+  border: 1px solid black;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  align-items: center;
+}
+
+.users img {
+  width: 275px;
+  height: 300px;
+}
+
+.login h4 {
+  padding-top: 10px;
+}
