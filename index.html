@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+      crossorigin="anonymous"
+    />
+    <title>Github Face Search</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="page-header">
+          <h1>Github Face Search</h1>
+          <hr/>
+          </div>
+
+          <div class="results row">
+          </div>
+
+          <form class="search-form">
+          <h3>Search a Face</h3>
+
+          <div class="form-group">
+            <input type="text" id="search-query" class="form-control" placeholder="Sha Hash">
+            </input>
+          </div>
+
+          <button type="button" class="btn btn-primary search">Search</button>
+          </form>
+  
+      </div>
+      </div>
+    </div> 
+
+    <script id="github-face-search-template" type="text/x-handlebars-template">
+      <div class="user col-md-6">
+        <div>Login: <strong> {{ login }} </strong></div>
+        <img src="{{avatar_url}}" alt="">
+      </div>
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+    <script src="main.js" type="text/javascript"></script>
+  </body>
+</html>
