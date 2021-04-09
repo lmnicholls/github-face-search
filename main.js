@@ -28,7 +28,7 @@ var addUser = function (data) {
 var fetch = function (query) {
   $.ajax({
     method: "GET",
-    url: "https://api.github.com/repos/facebook/react/commits?q=" + query,
+    url: "https://api.github.com/repos/facebook/react/commits",
     dataType: "json",
     success: function(data) {
       addUser(data);
